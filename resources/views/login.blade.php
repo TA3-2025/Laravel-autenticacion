@@ -13,4 +13,11 @@
             </div>
             <button type="submit">Login</button>
 
+        </form>
+
+        @if (session('error'))
+            <div style="color: red;">
+                {{ session('error') }}
+            </div>
+        @endif
 @include("componentes.footer")
