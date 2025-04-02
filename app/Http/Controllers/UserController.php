@@ -16,6 +16,9 @@ class UserController extends Controller
 
         return redirect('/login')
                     ->with('error', 'Credenciales incorrectas');
-        
+    }
+    public function logout(Request $request){
+        Auth::logout();
+        return redirect('/login')->with('logout',true);
     }
 }

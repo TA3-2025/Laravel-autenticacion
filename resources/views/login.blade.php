@@ -20,4 +20,10 @@
                 {{ session('error') }}
             </div>
         @endif
+
+        @if (session('logout'))
+            <div style="color: green;">
+                Sesión Cerrada
+            </div>
+        @endif
 @include("componentes.footer")

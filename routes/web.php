@@ -12,3 +12,4 @@ Route::get('/login', function () {
 });
 
 Route::post('/login',[UserController::class, 'Autenticar']); 
+Route::get('/logout',[UserController::class, 'logout']);
