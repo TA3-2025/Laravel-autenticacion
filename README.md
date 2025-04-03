@@ -16,7 +16,8 @@ DB_PASSWORD=
 ```
 Despues ejecutar: 
 ```
-composer install # Instala paquetes de php artisan key:generate # Genera key de laravel
+composer install # Instala paquetes de Composer
+php artisan key:generate # Genera key de laravel
 php artisan migrate # Ejecutar migraciones y crear tablas
 php artisan db:seed # Ejecutar seeders y llenar tabla users 
 ```
