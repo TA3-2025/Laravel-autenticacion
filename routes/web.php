@@ -6,7 +6,7 @@ use App\Http\Middleware\Autenticacion;
 
 Route::get('/', function () {
     return view('principal');
-})->middleware(Autenticacion::class);
+});
 
 Route::get('/privado', function () {
     return view('privado');
