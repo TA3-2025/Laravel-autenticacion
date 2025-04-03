@@ -8,6 +8,7 @@
     <nav>   
         <ul>
             <li><a href="/">Inicio</a></li>
+            <li><a href="/privado">Privado</a></li>
             @if(Auth::check())
                 <li>{{ Auth::user()->name }}</li>
                 <li><a href="/logout">Logout</a></li>

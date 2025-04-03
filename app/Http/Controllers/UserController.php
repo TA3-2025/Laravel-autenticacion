@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    public function CheckLogin(Request $request){
+        if(Auth::check())
+            return redirect('/');
+        return view("login");
+        
+    }
     public function Autenticar(Request $request){
         $credenciales = $request->only(['email', 'password']);
 
